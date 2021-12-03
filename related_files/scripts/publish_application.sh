@@ -20,3 +20,4 @@ rm $de/runtime.*.js
 rm $de/styles.*.css
 cp -R $so/assets $de/assets
 cp $so/*.* $de/
+sed -i 's/<base href="\/">/<base href="\/testfg03\/">/g' $de/index.html
