@@ -1,0 +1,10 @@
+<div class="description">
+  <h2>Liste détaillée</h2>
+  <p>Test de programmation Angular 13.</p>
+</div>
+<div *ngFor="let x of dataList39">
+  <p class="id01">{{ x.id }}</p>
+  <div class="external-file">
+    <div [innerHTML]="x.document39 | async"></div>
+  </div>
+</div>
