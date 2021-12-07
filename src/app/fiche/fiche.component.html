@@ -2,12 +2,16 @@
   <h2>Fiche</h2>
   <p>Test de programmation Angular 13.</p>
 </div>
+<div *ngIf="this.id" >
+  <p class="id01">{{ this.id }}</p>
+  <div class="external-file">
+    <div [innerHTML]="this.htmlfile"></div>
+  </div>
+</div>
 
 <div class="description spacet01">
   <h3>fiche.component.html</h3>
   <iframe src="assets/code-preview/fiche/html.txt"></iframe>
   <h3>fiche.component.ts</h3>
   <iframe src="assets/code-preview/fiche/typescript.txt"></iframe>
-  <h3>module01.service.ts</h3>
-  <iframe src="assets/code-preview/module01/typescript.txt"></iframe>
 </div>
