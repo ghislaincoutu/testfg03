@@ -4,14 +4,14 @@ Les fichiers se rapportant à l'application qui doivent être installés sur le 
 ## Paquets NPM à installer
 npm install ng2-search-filter
 
-## Commandes Angular pour générer les composants de l'application
+## Commandes Angular à exécuter pour générer les composants de l'application
 - ng generate component accueil
 - ng generate component menu
 - ng generate component liste-sommaire
 - ng generate component liste-detaillee
 - ng generate component fiche
 - ng generate service module01
-- ng generate service module02
+- ng generate pipe safe
 
 ## Ajout d'un fichier JavaScript externe à l'application
 

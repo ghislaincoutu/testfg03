@@ -1,11 +1,12 @@
 <div class="description">
-  <h2>Liste détaillée</h2>
-  <p>Test de programmation Angular 13.</p>
+  <h2>Vue liste détaillée</h2>
+  <p>Affichage des fiches grammaticales, vue détaillée</p>
 </div>
+
 <div *ngFor="let x of dataList39">
   <p class="id01">{{ x.id }}</p>
   <div class="external-file">
-    <div [innerHTML]="x.document39 | async"></div>
+    <div [innerHTML]="x.document39 | async | safe: 'html'"></div>
   </div>
 </div>
 
@@ -16,4 +17,6 @@
   <iframe src="assets/code-preview/liste-detaillee/typescript.txt"></iframe>
   <h3>module01.service.ts</h3>
   <iframe src="assets/code-preview/module01/typescript.txt"></iframe>
+  <h3>safe.pipe.ts</h3>
+  <iframe src="assets/code-preview/safe/typescript.txt"></iframe>
 </div>

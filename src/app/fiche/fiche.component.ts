@@ -23,7 +23,7 @@ export class FicheComponent implements OnInit {
     this.route38.queryParams.subscribe(response01 => {
       this.id38 = response01['id'];
     });
-    this.http38.get("assets/fiches/" + this.id38 + "/include.html", { responseType: 'text' }).subscribe(response02 => {
+    this.http38.get("https://172.17.0.1:2443/r002/testfg03/fiches/" + this.id38 + "/include.html", { responseType: 'text' }).subscribe(response02 => {
       this.htmlString38 = response02;
       this.htmlFile38 = this.sanitizer38.bypassSecurityTrustHtml(this.htmlString38);
     });

@@ -1,7 +1,8 @@
 <div class="description">
-  <h2>Liste sommaire</h2>
-  <p>Test de programmation Angular 13.</p>
+  <h2>Vue liste sommaire</h2>
+  <p>Affichage des fiches grammaticales, vue sommaire</p>
 </div>
+
 <ul *ngIf="dataList39" class="list01">
   <li *ngFor="let x of dataList39">
     <span>{{ x.id }}</span> &ndash; <a href="fiche?id={{ x.id }}"> {{ x.title }}</a>

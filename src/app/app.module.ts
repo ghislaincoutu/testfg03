@@ -9,6 +9,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ListeSommaireComponent } from './liste-sommaire/liste-sommaire.component';
 import { ListeDetailleeComponent } from './liste-detaillee/liste-detaillee.component';
 import { FicheComponent } from './fiche/fiche.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FicheComponent } from './fiche/fiche.component';
     AccueilComponent,
     ListeSommaireComponent,
     ListeDetailleeComponent,
-    FicheComponent
+    FicheComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,

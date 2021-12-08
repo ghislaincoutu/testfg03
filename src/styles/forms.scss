@@ -37,6 +37,18 @@ button:hover {
     width: 100%;
   }
 }
+.button01 {
+  margin: 10px 0;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  background-color: darkmagenta;
+  border: none;
+  &:hover {
+    background-color: black;
+  }
+}
 
 // Adaptation des styles pour les écrans plus larges que 500 pixels.
 @media (min-width: 500px) {

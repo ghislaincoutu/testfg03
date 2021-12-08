@@ -5,7 +5,7 @@ function apply_pause() {
 echo "Copie de sécurité des fichiers relatifs à l'application testfg03"
 apply_pause "Appuyer sur la touche [Retour] pour continuer..."
 
-source=/var/www/html/testfg03
+source=/var/www/html/r002/testfg03
 destination=/home/Tests/testfg03/related_files/publication
 rm $destination/*.tar.gz
 tar -czvf $destination/pub_testfg03_`(date +%Y%m%d-%H%M)`.tar.gz $source/
