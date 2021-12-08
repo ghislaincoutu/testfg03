@@ -54,7 +54,7 @@ export class Module01Service {
   constructor() { }
 
   getData39(): Observable<Data39[]> {
-    console.log(data39);
+    //console.log(data39);
     return of(data39).pipe(delay(500));
   }
 
