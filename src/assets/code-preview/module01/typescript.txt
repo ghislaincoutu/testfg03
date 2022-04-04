@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { of, Observable } from 'rxjs';
 import { delay } from 'rxjs/operators';
+import { environment } from './../environments/environment';
 
 export interface Data39 {
   comment: string;
@@ -16,8 +17,9 @@ export interface Data39 {
   document39?: any;
 }
 
+const envURL = environment.envURL;
 let path39: string;
-path39 = "https://172.17.0.1:2443/r002/testfg03/fiches/";
+path39 = envURL + "/testfg03/fiches/";
 
 const data39: Data39[] = [
   {
